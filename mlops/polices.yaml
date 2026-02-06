@@ -1,0 +1,16 @@
+policies:
+  - name: critical_drift
+    condition:
+      drift_detected: true
+    action: alert
+
+  - name: instruction_shift_only
+    condition:
+      instructional_stability_drift_flag: true
+      quality_drift_flag: false
+    action: log_only
+
+  - name: no_drift
+    condition:
+      drift_detected: false
+    action: ignore

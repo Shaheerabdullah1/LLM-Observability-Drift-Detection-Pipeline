@@ -1,0 +1,7 @@
+groq
+tqdm
+pandas
+python-dotenv
+openai==2.16.0
+scipy
+pyyaml>=6.0
