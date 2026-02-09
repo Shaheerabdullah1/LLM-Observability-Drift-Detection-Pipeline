@@ -1,0 +1,16 @@
+scoring:
+  weights:
+    instructional_stability: 0.35
+    confidence: 0.20
+    verbosity: 0.15
+    format: 0.15
+    latency: 0.15
+
+drift:
+  ks_threshold: 0.15
+  mean_threshold: 0.25
+  min_rows: 20
+
+baseline:
+  temperature: 0.2
+  fraction: 0.30
